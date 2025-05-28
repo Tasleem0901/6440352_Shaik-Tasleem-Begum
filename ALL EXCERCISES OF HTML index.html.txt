@@ -1,252 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Local Community Event Portal</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 800px;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    #welcomeBanner {
-      background-color: #0077cc;
-      color: white;
-      padding: 15px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-
-    .highlight {
-      background-color: yellow;
-      font-weight: bold;
-      padding: 2px 6px;
-    }
-
-    .event-img {
-      border: 2px solid black;
-      width: 100px;
-      height: 100px;
-      border-radius: 8px;
-    }
-
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-    }
-
-    td, th {
-      padding: 10px;
-    }
-
-    form input, form select, form textarea, form button {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    form button {
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #005fa3;
-    }
-
-    video {
-      margin-top: 20px;
-    }
-
-    .box {
-      width: 150px;
-      height: 150px;
-      background-color: skyblue;
-      margin: 20px auto;
-      line-height: 150px;
-      color: white;
-      font-weight: bold;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Community Events Hub</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f0fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .wrapper {
+    background: #ffffff;
+    max-width: 800px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0066bb;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  #welcomeBanner {
+    background-color: #0066bb;
+    color: white;
+    padding: 14px;
+    border-radius: 7px;
+    margin: 25px 0;
+  }
+  .highlight-text {
+    background-color: #fff176;
+    font-weight: 700;
+    padding: 3px 8px;
+  }
+  .event-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 9px;
+    border: 2px solid #000;
+  }
+  table {
+    margin: 25px auto;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 10px 14px;
+  }
+  form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+  form button {
+    background-color: #0066bb;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  form button:hover {
+    background-color: #004f8a;
+  }
+  video {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .interactive-box {
+    margin: 25px auto;
+    width: 160px;
+    height: 160px;
+    background-color: #56a1f3;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    line-height: 160px;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <nav>
       <a href="#home">Home</a>
       <a href="#events">Events</a>
       <a href="#contact">Contact</a>
-      <a href="help.html" target="_blank">Help</a>
+      <a href="help.html" target="_blank" rel="noopener">Help</a>
     </nav>
 
     <div id="welcomeBanner">
-      Welcome <span class="highlight">Guest</span>! <span style="color: red; font-weight: bold;">Special Offer!</span>
+      Hello <span class="highlight-text">Visitor</span>! <span style="color: #c62828; font-weight: 800;">Exclusive Deal!</span>
     </div>
 
     <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to the Local Community Event Portal!</p>
+      <h2>Welcome</h2>
+      <p>Explore upcoming local community events and join the fun!</p>
     </section>
 
     <section id="events">
-      <h2>Events</h2>
-
+      <h2>Upcoming Events</h2>
       <table border="1">
-        <caption>Community Event Highlights</caption>
-        <tr>
-          <td><img src="img1.jpg" alt="Event 1" title="Event 1" class="event-img"></td>
-          <td><img src="img2.jpg" alt="Event 2" title="Event 2" class="event-img"></td>
-          <td><img src="img3.jpg" alt="Event 3" title="Event 3" class="event-img"></td>
-        </tr>
-        <tr>
-          <td><img src="img4.jpg" alt="Event 4" title="Event 4" class="event-img"></td>
-          <td><img src="img5.jpg" alt="Event 5" title="Event 5" class="event-img"></td>
-          <td><img src="img6.jpg" alt="Event 6" title="Event 6" class="event-img"></td>
-        </tr>
+        <caption>Featured Events</caption>
+        <tbody>
+          <tr>
+            <td><img src="img1.jpg" alt="Event One" title="Event One" class="event-image"></td>
+            <td><img src="img2.jpg" alt="Event Two" title="Event Two" class="event-image"></td>
+            <td><img src="img3.jpg" alt="Event Three" title="Event Three" class="event-image"></td>
+          </tr>
+          <tr>
+            <td><img src="img4.jpg" alt="Event Four" title="Event Four" class="event-image"></td>
+            <td><img src="img5.jpg" alt="Event Five" title="Event Five" class="event-image"></td>
+            <td><img src="img6.jpg" alt="Event Six" title="Event Six" class="event-image"></td>
+          </tr>
+        </tbody>
       </table>
 
-      <h3>Register for an Event</h3>
-      <form onsubmit="showConfirmation(); return false;">
-        <input type="text" placeholder="Your Name" required autofocus>
-        <input type="email" placeholder="Your Email" required>
-        <input type="date" required>
-        <select id="eventType" onchange="savePreference()" required>
-          <option value="">Select Event Type</option>
+      <h3>Sign Up for an Event</h3>
+      <form id="registrationForm" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Full Name" required autofocus />
+        <input type="email" placeholder="Email Address" required />
+        <input type="date" required />
+        <select id="eventCategory" required onchange="storeCategory()">
+          <option value="" disabled selected>Select Category</option>
           <option value="sports">Sports</option>
           <option value="music">Music</option>
         </select>
-        <textarea placeholder="Message" required></textarea>
-        <input type="text" id="phone" placeholder="Phone Number" onblur="validatePhone()">
-        <div id="feeDisplay"></div>
-        <textarea id="feedback" onkeyup="countChars()" placeholder="Your feedback"></textarea>
-        <p>Characters: <span id="charCount">0</span></p>
-        <button type="submit">Register</button>
-        <output id="confirmationMsg"></output>
+        <textarea placeholder="Additional Comments" required></textarea>
+        <input type="text" id="phoneInput" placeholder="Contact Number" onblur="checkPhoneNumber()" />
+        <div id="feeInfo"></div>
+        <textarea id="userFeedback" placeholder="Feedback" oninput="updateCharCount()"></textarea>
+        <p>Characters typed: <span id="feedbackCharCount">0</span></p>
+        <button type="submit">Submit Registration</button>
+        <output id="responseMessage"></output>
       </form>
 
-      <video id="promoVideo" width="320" controls oncanplay="readyMsg()">
-        <source src="promo.mp4" type="video/mp4">
+      <video id="promoVideo" width="320" controls oncanplay="videoReady()">
+        <source src="promo.mp4" type="video/mp4" />
       </video>
-      <p id="videoStatus"></p>
+      <p id="videoMessage"></p>
 
-      <button onclick="findNearby()">Find Nearby Events</button>
-      <p id="locationInfo"></p>
+      <button onclick="getLocation()">Show Nearby Events</button>
+      <p id="geoInfo"></p>
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@communityevents.com</p>
+      <h2>Contact Information</h2>
+      <p>Email us at: support@communityevents.com</p>
     </section>
 
-    <h3>Debugging Section</h3>
-    <div class="box" id="debugBox">Click Me</div>
-    <button onclick="triggerError()">Trigger Error</button>
+    <h3>Debug Section</h3>
+    <div class="interactive-box" id="colorBox">Press Me</div>
+    <button onclick="causeError()">Generate Error</button>
   </div>
 
-  <script>
-    console.log("Page Loaded");
+<script>
+  console.log("Document fully loaded");
 
-    document.getElementById("debugBox").addEventListener("click", function () {
-      console.log("Box clicked");
-      this.style.backgroundColor = getRandomColor();
-    });
+  const colorBox = document.getElementById("colorBox");
+  colorBox.addEventListener("click", () => {
+    console.log("Box pressed");
+    colorBox.style.backgroundColor = pickRandomColor();
+  });
 
-    function getRandomColor() {
-      const colors = ["red", "green", "blue", "orange"];
-      const index = Math.floor(Math.random() * colors.length);
-      return colors[index];
+  function pickRandomColor() {
+    const palette = ["red", "green", "blue", "orange"];
+    return palette[Math.floor(Math.random() * palette.length)];
+  }
+
+  function causeError() {
+    let undefinedVar;
+    // Intentional error to test error handling
+    console.log(undefinedVar.toUpperCase());
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    document.getElementById("responseMessage").value = "Registration successful. Thank you!";
+  }
+
+  function checkPhoneNumber() {
+    const phoneVal = document.getElementById("phoneInput").value;
+    const phoneRegex = /^\d{10}$/;
+    if (phoneVal && !phoneRegex.test(phoneVal)) {
+      alert("Please enter a valid 10-digit phone number.");
     }
+  }
 
-    function triggerError() {
-      let num = undefined;
-      console.log(num.toUpperCase()); // Intentional error
-    }
+  function updateCharCount() {
+    const textLen = document.getElementById("userFeedback").value.length;
+    document.getElementById("feedbackCharCount").textContent = textLen;
+  }
 
-    function showConfirmation() {
-      document.getElementById("confirmationMsg").value = "Thank you for registering!";
-    }
+  function videoReady() {
+    document.getElementById("videoMessage").textContent = "Video is loaded and ready to play!";
+  }
 
-    function validatePhone() {
-      const phone = document.getElementById('phone').value;
-      if (!/^\d{10}$/.test(phone)) {
-        alert("Invalid phone number");
-      }
-    }
+  window.onbeforeunload = () => {
+    return "You have unsaved data. Are you sure you want to leave?";
+  };
 
-    function countChars() {
-      const count = document.getElementById("feedback").value.length;
-      document.getElementById("charCount").innerText = count;
-    }
+  function storeCategory() {
+    const selectedCategory = document.getElementById("eventCategory").value;
+    localStorage.setItem("preferredCategory", selectedCategory);
+  }
 
-    function readyMsg() {
-      document.getElementById('videoStatus').innerText = "Video ready to play!";
+  window.onload = () => {
+    const savedCategory = localStorage.getItem("preferredCategory");
+    if (savedCategory) {
+      document.getElementById("eventCategory").value = savedCategory;
     }
+  };
 
-    window.onbeforeunload = function() {
-      return "You have unsaved changes. Are you sure you want to leave?";
+  function getLocation() {
+    const geoOutput = document.getElementById("geoInfo");
+    if (!navigator.geolocation) {
+      geoOutput.textContent = "Your browser does not support geolocation.";
+      return;
     }
-
-    function savePreference() {
-      const selected = document.getElementById("eventType").value;
-      localStorage.setItem("eventType", selected);
-    }
-
-    window.onload = function () {
-      const type = localStorage.getItem("eventType");
-      if (type) document.getElementById("eventType").value = type;
-    }
-
-    function findNearby() {
-      if (!navigator.geolocation) {
-        document.getElementById("locationInfo").innerText = "Geolocation not supported.";
-        return;
-      }
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          const coords = pos.coords;
-          document.getElementById("locationInfo").innerText =
-            `Latitude: ${coords.latitude}, Longitude: ${coords.longitude}`;
-        },
-        (err) => {
-          document.getElementById("locationInfo").innerText = "Error: " + err.message;
-        },
-        { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
-      );
-    }
-  </script>
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        geoOutput.textContent = `Latitude: ${latitude.toFixed(4)}, Longitude: ${longitude.toFixed(4)}`;
+      },
+      (error) => {
+        geoOutput.textContent = `Unable to retrieve location: ${error.message}`;
+      },
+      { enableHighAccuracy: true, timeout: 6000, maximumAge: 0 }
+    );
+  }
+</script>
 </body>
 </html>
